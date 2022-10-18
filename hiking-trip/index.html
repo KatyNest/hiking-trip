@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiking Trip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="125">
+<header class="header home">
+  <div class="header-top">
+    <nav id="navbar-main" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="navbar-brand__img" src="img/logo.svg" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+          aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"">
+            <li class="nav-item">              
+              <a class="nav-link active" aria-current="page" href="#countries">
+                <img class="nav-img" src="img/icon-country.svg" alt="">
+                Страны</a>
+            </li>
+            <li class="nav-item">             
+              <a class="nav-link" href="#tours">
+                <img class="nav-img" src="img/icon-tour.svg" alt="">
+                Туры
+              </a>
+            </li>
+            <li class="nav-item">             
+              <a class="nav-link" href="#about">
+                <img class="nav-img" src="img/icon-about.svg" alt="">
+                О Нас
+              </a>
+            </li>
+            <li class="nav-item">             
+              <a class="nav-link" href="#reviews">
+                <img class="nav-img" src="img/icon-reviews.svg" alt="">
+                Отзывы</a>
+            </li>
+            <li class="nav-item">              
+              <a class="nav-link" href="#order">
+                <img class="nav-img" src="img/icon-order.svg" alt="">
+                Бронировать
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex language">
+      <a href="#" class="btn active">Ru</a>
+      <a href="#" class="btn">En</a>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container-fluid">
+      <div class="header-bottom__title animate__animated animate__delay-1s animate__fadeInRight">ПЕШИЕ ТУРЫ<br />
+        <span>по всему миру</span>
+      </div>
+      
+    </div>
+    <button class="btn header-bottom__btn btn-orange animate__animated animate__delay-2s animate__fadeInUp">Смотреть
+      туры</button>
+  </div>
+</header>
+ <section class="countries">
+  <div class="container">
+    <div class="countries__inner" id="countries">
+      <div class="title countries-title wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">Страны</div>
+      <div class="countries-slider">
+        <div class="countries-slider__item wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+          <img class="countries-slider__item-img lazy" data-src="img/country1.png" alt="" />
+          <div class="countries-slider__item-title">Россия</div>
+          <div class="countries-slider__item-bottom">
+            <div class="countries-slider__item-amount">10 туров</div>
+            <button class="btn countries-slider__item-btn btn-orange">Подробнее</button>
+          </div>
+        </div>
+        <div class="countries-slider__item wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+          <img class="countries-slider__item-img lazy" data-src="img/country2.png" alt="" />
+          <div class="countries-slider__item-title">Турция</div>
+          <div class="countries-slider__item-bottom">
+            <div class="countries-slider__item-amount">6 труров</div>
+            <button class="btn countries-slider__item-btn btn-orange">Подробнее</button>
+          </div>
+        </div>
+        <div class="countries-slider__item wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+          <img class="countries-slider__item-img lazy" data-src="img/country3.png" alt="" />
+          <div class="countries-slider__item-title">Непал</div>
+          <div class="countries-slider__item-bottom">
+            <div class="countries-slider__item-amount">5 туров</div>
+            <button class="btn countries-slider__item-btn btn-orange">Подробнее</button>
+          </div>
+        </div>
+        <div class="countries-slider__item">
+          <img class="countries-slider__item-img lazy" data-src="img/country1.png" alt="" />
+          <div class="countries-slider__item-title">Россия</div>
+          <div class="countries-slider__item-bottom">
+            <div class="countries-slider__item-amount">10 туров</div>
+            <button class="btn countries-slider__item-btn btn-orange">Подробнее</button>
+          </div>
+        </div>
+        <div class="countries-slider__item">
+          <img class="countries-slider__item-img lazy" data-src="img/country2.png" alt="" />
+          <div class="countries-slider__item-title">Турция</div>
+          <div class="countries-slider__item-bottom">
+            <div class="countries-slider__item-amount">6 труров</div>
+            <button class="btn countries-slider__item-btn btn-orange">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="routes" id="tours">
+  <div class="routes__inner">
+    <div class="container">
+      <div class="title routes-title wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">Популярные маршруты</div>
+    </div>
+    <div class="route-slider">
+      <div class="route-box wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+        <div class="route-box__wraper lazy" style="background-image:url(img/route1.png)">
+          <div class="route-box__cover">
+            <div class="route-box__title">МАРШРУТ</div>
+            <div class="route-box__title-small">Тиват - Котор</div>
+            <div class="route-box__subtitle">ТИВАТ <span>|</span> ЧЕРНОГОРИЯ</div>
+            <a href="tour.html" class="btn btn-orange route-box__details">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+      <div class="route-box wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+        <div class="route-box__wraper lazy" style="background-image:url(img/route2.png)">
+          <div class="route-box__cover">
+            <div class="route-box__title">МАРШРУТ</div>
+            <div class="route-box__title-small">МАРДИ ХИМАЛ</div>
+            <div class="route-box__subtitle">КАТМАНДУ <span>|</span> НЕПАЛ</div>
+            <a href="tour.html" class="btn btn-orange route-box__details">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+      <div class="route-box wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+        <div class="route-box__wraper lazy" style="background-image:url(img/route3.png)">
+          <div class="route-box__cover">
+            <div class="route-box__title">КБЖД</div>
+            <div class="route-box__title-small">Туда и обратно</div>
+            <div class="route-box__subtitle">ИРКУТСК <span>|</span> РОССИЯ</div>
+            <a href="tour.html" class="btn btn-orange route-box__details">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+      <div class="route-box wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+        <div class="route-box__wraper lazy" style="background-image:url(img/route4.png)">
+          <div class="route-box__cover">
+            <div class="route-box__title">МАРШРУТ</div>
+            <div class="route-box__title-small">Ликийская тропа</div>
+            <div class="route-box__subtitle">АНТАЛИЯ <span>|</span> ТУРЦИЯ</div>
+            <a href="tour.html" class="btn btn-orange route-box__details">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+      <div class="route-box">
+        <div class="route-box__wraper lazy" style="background-image:url(img/route1.png)">
+          <div class="route-box__cover">
+            <div class="route-box__title">МАРШРУТ</div>
+              <div class="route-box__title-small">Тиват - Котор</div>            
+              <div class="route-box__subtitle">ТИВАТ <span>|</span> ЧЕРНОГОРИЯ</div>
+              <a href="tour.html" class="btn btn-orange route-box__details">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+      <div class="route-box">
+        <div class="route-box__wraper" style="background-image:url(img/route2.png)">
+          <div class="route-box__cover">
+            <div class="route-box__title">МАРШРУТ</div>
+              <div class="route-box__title-small">МАРДИ ХИМАЛ</div>
+              <div class="route-box__subtitle">КАТМАНДУ <span>|</span> НЕПАЛ</div>
+              <a href="tour.html" class="btn btn-orange route-box__details">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>   
+      <div class="route-box">
+        <div class="route-box__wraper" style="background-image:url(img/route3.png)">
+          <div class="route-box__cover">
+            <div class="route-box__title">КБЖД</div>
+              <div class="route-box__title-small">Туда и обратно</div>
+              <div class="route-box__subtitle">ИРКУТСК <span>|</span> РОССИЯ</div>
+              <a href="tour.html" class="btn btn-orange route-box__details">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+      <div class="route-box">
+         <div class="route-box__wraper" style="background-image:url(img/route4.png)">
+          <div class="route-box__cover">
+            <div class="route-box__title">МАРШРУТ</div>
+              <div class="route-box__title-small">Ликийская тропа</div>            
+              <div class="route-box__subtitle">АНТАЛИЯ <span>|</span> ТУРЦИЯ</div>
+              <a href="tour.html" class="btn btn-orange route-box__details">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container">
+    <div class="about__inner">
+      <div class="title about-title wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">О нас</div>
+      <div class="about__text">
+       <p>HikingTrip — это объединение гидов и организаторов активного отдыха, альпинистов и просто любителей пеших походов. Наша
+        команда — это люди, которые не представляют себе жизнь без путешествий и приключений. Главная цель клуба — планирование,
+        организация и проведение походов в разных точках нашей планеты. Мы не являемся туроператором в привычном понимании и не
+        зажаты в рамки стандартных туров, которые предлагаются местными организаторами в разных странах.</p>
+        
+        <p>Все наши маршруты хорошо нам известны, а инструктора, которые на них работают, либо сами прокладывали трек, либо
+        постоянно его совершенствуют, добавляя что-либо новое и интересное. Мы стараемся составлять маршрут таким образом, чтобы
+        путешествие было как можно доступнее всем любителям активного отдыха, невзирая на их физическую подготовку или доходы.
+        При этом география предлагаемых нами походов, трекингов, экспедиций, восхождений и активных туров очень широка и
+        постоянно растет. Сейчас наш клуб организовывает активный отдых в 20-ти странах мира на пяти континентах.</p>
+        
+        <p>Главные принципы организации походов в горы:</p>
+        <ul class="about-list">
+          <li class="about-list__item">Безопасность всех участников.</li>
+          <li class="about-list__item">Индивидуальный подход к каждому во время подготовки к походу и в горах.</li>
+          <li class="about-list__item">Профессиональные гиды.</li>
+          <li class="about-list__item">Самые низкие цены.</li>
+          <li class="about-list__item">Максимально интересные и насыщенные маршруты.</li>
+        </ul>
+      </div>
+      <div class="about-slider">
+        <div class="about-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="about-box__img lazy" data-src="img/about.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="about-box__text">
+                <p>Фёдор - наш гид-экскурсовод. Его основное направление - походы в Черногории.</p>
+               <p>Занимается туризмом практически с пеленок. Маленький Федя отправился в свой первый поход, когда ему не было еще и года.</p>
+                
+               </p>А в Черногории Фёдор живет вот уже почти 10 лет и знает там каждую тропу. Вместе с ним мы разработаем маршрут любой
+                сложности специально для вас.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="about-box__img lazy" data-src="img/about.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="about-box__text">
+                <p>Фёдор - наш гид-экскурсовод. Его основное направление - походы в Черногории.</p>
+                <p>Занимается туризмом практически с пеленок. Маленький Федя отправился в свой первый поход, когда ему не было
+                  еще и года.</p>
+        
+                </p>А в Черногории Фёдор живет вот уже почти 10 лет и знает там каждую тропу. Вместе с ним мы разработаем маршрут
+                любой
+                сложности специально для вас.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="about-box__img lazy" data-src="img/about.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="about-box__text">
+                <p>Фёдор - наш гид-экскурсовод. Его основное направление - походы в Черногории.</p>
+                <p>Занимается туризмом практически с пеленок. Маленький Федя отправился в свой первый поход, когда ему не было
+                  еще и года.</p>
+        
+                </p>А в Черногории Фёдор живет вот уже почти 10 лет и знает там каждую тропу. Вместе с ним мы разработаем маршрут
+                любой
+                сложности специально для вас.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="about-box__img lazy" data-src="img/about.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="about-box__text">
+                <p>Фёдор - наш гид-экскурсовод. Его основное направление - походы в Черногории.</p>
+                <p>Занимается туризмом практически с пеленок. Маленький Федя отправился в свой первый поход, когда ему не было
+                  еще и года.</p>
+        
+                </p>А в Черногории Фёдор живет вот уже почти 10 лет и знает там каждую тропу. Вместе с ним мы разработаем маршрут
+                любой
+                сложности специально для вас.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="about-box__img lazy" data-src="img/about.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="about-box__text">
+                <p>Фёдор - наш гид-экскурсовод. Его основное направление - походы в Черногории.</p>
+                <p>Занимается туризмом практически с пеленок. Маленький Федя отправился в свой первый поход, когда ему не было
+                  еще и года.</p>
+        
+                </p>А в Черногории Фёдор живет вот уже почти 10 лет и знает там каждую тропу. Вместе с ним мы разработаем маршрут
+                любой
+                сложности специально для вас.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="about-box__img lazy" data-src="img/about.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="about-box__text">
+                <p>Фёдор - наш гид-экскурсовод. Его основное направление - походы в Черногории.</p>
+                <p>Занимается туризмом практически с пеленок. Маленький Федя отправился в свой первый поход, когда ему не было
+                  еще и года.</p>
+        
+                </p>А в Черногории Фёдор живет вот уже почти 10 лет и знает там каждую тропу. Вместе с ним мы разработаем маршрут
+                любой
+                сложности специально для вас.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="reviews__inner">
+      <div class="title reviews-title wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">Отзывы</div>
+      <div class="reviews-slider">
+        <div class="reviews-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="reviews-box__img lazy" data-src="img/reviews1.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="reviews-box__text">
+                <p>Спасибо Hiking Trip за незабываемое путешествие во иркутской КБЖД!</p>
+                <p> Ребята помогли с подбором маршрута (так как это был мой первый поход) и покупкой билетов из Воронежа до
+                  Иркутска.</p>
+        
+                <p>Меня встретили в Аэропорте Иркутска и доcтавили к месту старта))</p>
+        
+                <p>Отдельное спасибо нашему гиду Артуру за хорошее настроение, интересные рассказы об этом крутом месте и заботе
+                  о каждом
+                  члене нашей группы!</p>
+        
+                <p>Ребята, вы лучшие. Отныне в поход только с вами!</p>
+              </div>
+              <div class="reviews-box__name">
+                Саша, <span class="city">Воронеж</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="reviews-box__img lazy" data-src="img/reviews1.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="reviews-box__text">
+                <p>Спасибо Hiking Trip за незабываемое путешествие во иркутской КБЖД!</p>
+                <p> Ребята помогли с подбором маршрута (так как это был мой первый поход) и покупкой билетов из Воронежа до
+                  Иркутска.</p>
+        
+                <p>Меня встретили в Аэропорте Иркутска и доcтавили к месту старта))</p>
+        
+                <p>Отдельное спасибо нашему гиду Артуру за хорошее настроение, интересные рассказы об этом крутом месте и заботе
+                  о каждом
+                  члене нашей группы!</p>
+        
+                <p>Ребята, вы лучшие. Отныне в поход только с вами!</p>
+              </div>
+              <div class="reviews-box__name">
+                Саша, <span class="city">Воронеж</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="reviews-box__img lazy" data-src="img/reviews1.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="reviews-box__text">
+                <p>Спасибо Hiking Trip за незабываемое путешествие во иркутской КБЖД!</p>
+                <p> Ребята помогли с подбором маршрута (так как это был мой первый поход) и покупкой билетов из Воронежа до
+                  Иркутска.</p>
+        
+                <p>Меня встретили в Аэропорте Иркутска и доcтавили к месту старта))</p>
+        
+                <p>Отдельное спасибо нашему гиду Артуру за хорошее настроение, интересные рассказы об этом крутом месте и заботе
+                  о каждом
+                  члене нашей группы!</p>
+        
+                <p>Ребята, вы лучшие. Отныне в поход только с вами!</p>
+              </div>
+              <div class="reviews-box__name">
+                Саша, <span class="city">Воронеж</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="reviews-box__img lazy" data-src="img/reviews1.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="reviews-box__text">
+                <p>Спасибо Hiking Trip за незабываемое путешествие во иркутской КБЖД!</p>
+                <p> Ребята помогли с подбором маршрута (так как это был мой первый поход) и покупкой билетов из Воронежа до
+                  Иркутска.</p>
+        
+                <p>Меня встретили в Аэропорте Иркутска и доcтавили к месту старта))</p>
+        
+                <p>Отдельное спасибо нашему гиду Артуру за хорошее настроение, интересные рассказы об этом крутом месте и заботе
+                  о каждом
+                  члене нашей группы!</p>
+        
+                <p>Ребята, вы лучшие. Отныне в поход только с вами!</p>
+              </div>
+              <div class="reviews-box__name">
+                Саша, <span class="city">Воронеж</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-box">
+          <div class="row">
+            <div class="col-md-5">
+              <img class="reviews-box__img lazy" data-src="img/reviews1.png" alt="" />
+            </div>
+            <div class="col-md-7">
+              <div class="reviews-box__text">
+                <p>Спасибо Hiking Trip за незабываемое путешествие во иркутской КБЖД!</p>
+                <p> Ребята помогли с подбором маршрута (так как это был мой первый поход) и покупкой билетов из Воронежа до Иркутска.</p>
+                
+                <p>Меня встретили в Аэропорте Иркутска и доcтавили к месту старта))</p>
+                
+                <p>Отдельное спасибо нашему гиду Артуру за хорошее настроение, интересные рассказы об этом крутом месте и заботе о каждом
+                члене нашей группы!</p>
+                
+                <p>Ребята, вы лучшие. Отныне в поход только с вами!</p>
+              </div>
+              <div class="reviews-box__name">
+                Саша, <span class="city">Воронеж</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="order" id="order">
+  <div class="container">
+    <div class="order__inner">
+      <div class="title order-title wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">Сомневаешься, какой выбрать маршрут?</div>
+      <div class="order-subtitle wow animate__animated animate__fadeInLeft" data-wow-delay="0.4s">Оставь заявку, мы обязательно свяжемся с тобой и поможем с выбором.</div>
+      <form class="order-form" name="order-form" method="post">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Имя Фамилия" />
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Телефон" />
+        </div>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Email" required />
+          </div>
+        <button type="submit" class="btn order-form__btn btn-orange wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">ОСТАВИТЬ ЗАЯВКУ</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="row">
+        <div class="col">
+          <div class="logo">
+            <a href="index.html" class="logo-link">
+              <img src="img/logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row footer__items">
+        <div class="col-12 col-sm-3">
+          <div class="footer__community">Сообщество «HikingTrip»</div>
+          <div class="footer__copy">&copy; 2021. Все права защищены</div>
+          <div class="policy"><a href="#">Политика конфиденциальности</a></div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="footer__address"><span>Адрес:</span><br />
+            г. Великий Гусляр, ул.Мира, 10,<br />
+            2 этаж
+        </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <div class="footer__order"><span>Заказ туров и бронирование:</span><br />
+            тел. +7 903-050-43-43<br />
+            e-mail: hikingtrip@gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/main.min.js"></script>
+
+</body>
+</html>

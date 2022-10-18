@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hiking Trip| Tour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img class="navbar-brand__img" src="img/logo.svg" alt="" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+            aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"">
+              <li class=" nav-item">
+                <a class="nav-link active" aria-current="page" href="#countries">
+                  <img class="nav-img" src="img/icon-country.svg" alt="">
+                  Страны
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tours">
+                  <img class="nav-img" src="img/icon-tour.svg" alt="">
+                  Туры
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  <img class="nav-img" src="img/icon-about.svg" alt="">
+                  О Нас
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">
+                  <img class="nav-img" src="img/icon-reviews.svg" alt="">
+                  Отзывы</a>
+              </li>
+              <li class="nav-item">            
+                <a class="nav-link" href="#order">
+                  <img class="nav-img" src="img/icon-order.svg" alt="">
+                  Бронировать
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex language">
+        <a href="#" class="btn active">Ru</a>
+        <a href="#" class="btn">En</a>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container-fluid">
+        <div class="header-bottom__title header-tour__title animate__animated animate__delay-1s animate__fadeInDown">МАРШРУТ ПО КБЖД</div>
+        <a href="#order" class="btn header-bottom__btn header-bottom__book-btn btn-orange animate__animated animate__delay-1s animate__fadeInUp">Забронировать</a>
+      </div>
+    </div>
+  </header>
+<section class="route">
+  <div class="container">
+    <div class="route__inner">
+      <div class="title route-title wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">О маршруте</div>
+      <div class="row route__about">
+        <div class="col-md-4 col-md-4 col-lg-3 col-xl-2">
+          <div class="route-guide">
+            <img class="route-guide__img lazy" data-src="img/guide.png" alt="" />
+            <div class="route-guide__title">Гид-проводник</div>
+            <a class="route-guide__name" href="#">Ваня</a>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 col-xl-10">
+          <div class="route__items">
+            <div class="row">
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 route__item">
+                <img class="route__item-img" src="img/distance.svg" alt="">
+                <div class="route__item-title">Продолжительность</div>
+                <div class="route__item-value">85 км</div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 route__item">
+                <img class="route__item-img" src="img/duration.svg" alt="">
+                <div class="route__item-title">Длительность</div>
+                <div class="route__item-value">5-7 дней</div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 route__item">
+                <img class="route__item-img" src="img/hiking.svg" alt="">
+                <div class="route__item-title">Сложность</div>
+                <div class="route__item-value">3/10</div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 route__item">
+                <img class="route__item-img" src="img/living.svg" alt="">
+                <div class="route__item-title">Проживание</div>
+                <div class="route__item-value">В палатке</div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 route__item">
+                <img class="route__item-img" src="img/group.svg" alt="">
+                <div class="route__item-title">Группа</div>
+                <div class="route__item-value">3-10 человек</div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 route__item">
+                <img class="route__item-img" src="img/season.svg" alt="">
+                <div class="route__item-title">Сезон</div>
+                <div class="route__item-value">Май-Сентябрь</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="route__text">
+        <p>В настоящее время Кругобайкальской железной дорогой обычно называют ветку Слюдянка II — Байкал длиной 89 километров. На
+        дороге сейчас имеется четыре станции (Култук, Маритуй, Уланово и Байкал) и один разъезд 137-й км. На КБЖД используется
+        38 тоннелей общей длиной 9063 м (самый длинный из них — тоннель через мыс Половинный длиной 777 м), 15 каменных галерей
+        общей длиной 295 м и 3 железобетонных галереи с отверстиями, 248 мостов и виадуков, 268 подпорных стенок. По
+        насыщенности инженерными сооружениями КБЖД не имеет равных в России и занимает одно из первых мест в мире. Тоннели и
+        каменные галереи КБЖД уникальны тем, что они строились по нетиповым проектам и не были перестроены в последующие годы,
+        сохранив первоначальный замысел архитекторов и инженеров начала XX века.</p>
+        
+        <p>Вместе мы совершим незабываемое путешествие длинной около 85 км из порта Байкал до п. Слюдянка. Маршрут проходит по
+        очень живописным местам вдоль северного побережья южной оконечности озера Байкал. Средняя продолжительность пути в день
+        15-20км. Мы будем жить в палатках, готовить еду на костре, по вечерам слушать древние легенды и любоваться звездным
+        небом.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="program">
+  <div class="container">
+    <div class="program__inner">
+      <div class="title program-title wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">Программа маршрута</div>
+      <div class="row program__item">
+        <div class="col-sm-3 col-md-2">
+          <div class="program__item-day">
+            День <span>1</span>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-10 program__item-text">
+          <p>Встречаемся на вокзале города Иркутска в 6 утра. Для гостей, прилетевших в Иркустк самолетом мы организуем трансфер из
+          аэропорта до вокзала.</p>
+          <p>В 8 утра погружаемся в маршрутку и едем до п. Листвянка, где пересаживаемся на паром. Через исток
+          реки Ангара мы прибываем в порт Байкал в 10 утра.<br />
+          В 12:00 -завтрак и выход на маршрут.</p>
+          
+          <p>В первый день нам необходимо пройти 10-15 км.</p>
+          
+          <p>К вечеру разбиваем лагерь, готовим ужин, проводим вече у костра и ложимся спать в палатах.</p>
+        </div>
+      </div>
+      <div class="row program__item">
+        <div class="col-sm-3 col-md-2">
+          <div class="program__item-day">
+            День <span>2</span>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-10 program__item-text">
+          <p>Поднимаемся в 8 утра. Завтракаем. Выдвигаемся на маршрут. В этот день нам предстоит пройти 20 км.</p>
+          
+          <p>Будем двигаться дальше вдоль КБЖД. По пути нам будут встречаться множество туннелей. Нам втретятся ст. Уланово –
+          единственная из станций КБЖД, которую в 62-ом ликвидировали по причине превращения участка в тупиковый. Были утрачены
+          необходимые постройки для обслуживания поездов и пассажиров, водоподъемные сооружения и вековые тополя. Название свое
+          станция получила в честь комиссара Николая Уланова, который в 1933 здесь же был убит белыми.</p>          
+          <p>Поселок Шумиха, официально зарегистрировано 2 человека, так же в поселке имеется небольшая турбаза.</p>          
+          <p>По пути мы будем останавливаться на привалы, переводим дух и дальше в путь!</p>          
+          <p>В середине дня - обед.</p>          
+          <p>К вечеру разбиваем лагерь, готовим ужин, проводим вечер у костра и ложимся спать в палатах.</p>
+        </div>
+      </div>
+      <div class="row program__item">
+        <div class="col-sm-3 col-md-2">
+          <div class="program__item-day">
+            День <span>3</span>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-10 program__item-text">
+          <p>Поднимаемся в 8 утра. Завтракаем. Выдвигаемся на маршрут. В этот день нам предстоит пройти 25 км.</p>          
+          <p>Будем двигаться дальше вдоль КБЖД. По пути нам будут встречаться множество туннелей.</p>          
+          <p>По пути мы будем останавливаться на привалы, переводим дух и дальше в путь!</p>
+          <p>В середине дня - обед.</p>
+          <p>К вечеру разбиваем лагерь, готовим ужин, проводим вече у костра и ложимся спать в палатах.</p>
+        </div>
+      </div>
+      <div class="row program__item">
+        <div class="col-sm-3 col-md-2">
+          <div class="program__item-day">
+            День <span>4</span>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-10 program__item-text">
+        <p>Поднимаемся в 8 утра. Завтракаем. Выдвигаемся на маршрут. В этот день нам предстоит пройти 25 км.</p>
+          
+        <p>Будем двигаться дальше вдоль КБЖД. По пути нам будут встречаться множество туннелей.</p>          
+        <p>По пути мы будем останавливаться на привалы, переводим дух и дальше в путь!</p>
+        <p>В середине дня - обед.</p>
+        <p> К вечеру разбиваем лагерь, готовим ужин, проводим вече у костра и ложимся спать в палатах.</p>
+        </div>
+      </div>
+      <div class="row program__item">
+        <div class="col-sm-3 col-md-2">
+          <div class="program__item-day">
+            День <span>5</span>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-10 program__item-text">
+          <p>И вот, завершающий день нашего грандиозного похода. Нам предсотит пройти через деревни, такие как Ангасольская -
+          небольшой уютный поселок на самом берегу Байкала. Поселок, в котором в любое время года и в любой день недели количество
+          гостей и туристов превосходит число местных жителей.</p>
+          <p>Поселок Старая Ангасолка известен благодаря дому Николая Константиновича Рериха – великого художника, путешественника,
+          археолога, ученого, поэта, писателя. В 1923-1928 г.г. Николай Рерих вместе со своей семьей и группой ученых совершил
+          Центрально-Азиатскую экспедицию, маршрут которой пролегал через Монголию, Китай, Тибет, Индию.</p>          
+          <p>В районе поселка Ангасольская можно увидеть: арочный мост каменной кладки через устье Ангасолки;</p>
+          <p>Добираемся до п. Слюдянка и ночуем в гостевом доме. Можно сходить в баню.</p>
+        </div>
+      </div>
+      <div class="row program__item">
+        <div class="col-sm-3 col-md-2">
+          <div class="program__item-day">
+            День <span>6</span>
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-10 program__item-text">
+          <p>Обратно нам предстоит добраться тем же маршрутом, но не ножками, а на поезде. Грузимся в Слюдянке и едем до станции порт
+          Байкал.<br />
+          Оттуда пересаживаемся на паром и следуем в Листвянку. Нас забирает транспорт и развозит на вокзал и аэропорт.</p>
+        </div>
+      </div>
+      <div class="row include">
+        <div class="col-lg-6 include__item">
+          <div class="program__subtitle wow animate__animated animate__fadeInDown" data-wow-delay="0.4s">Входит в стоимость</div>
+          <ul class="include__list">
+            <li class="include__list-item">Работа гида HikingTrip;</li>
+            <li class="include__list-item">Трансфер из аэропорта;</li>
+            <li class="include__list-item">Проживание в кемпингах по программе;</li>
+            <li class="include__list-item">Проживание в гостевом доме в Слюдянке (в 2-3-местных номерах);</li>
+            <li class="include__list-item">Трёхразовое питание по программе;</li>
+            <li class="include__list-item">Входные платы в заповедники и национальные парки по маршруту;</li>
+            <li class="include__list-item">Входные платы для посещения достопримечательностей по программе
+            Паром Листвянка - порт Байкал - Листвянка</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 include__item">
+          <div class="program__subtitle wow animate__animated animate__fadeInDown" data-wow-delay="0.6s">Что не входит в стоимость</div>
+            <ul class="include__list">
+              <li class="include__list-item">Перелет/поезд до Иркутска</li>
+              <li class="include__list-item">Питание вне программы</li>
+              <li class="include__list-item">Дополнительные экскурсии и активности</li>
+              <li class="include__list-item">Проживание в пансионатах и гостиницах вне программы.</li>
+              <li class="include__list-item">Медицинская страховка (обычная туристическая, без повышающих коэффициентов);</li>
+            </ul>
+          </div>                  
+       </div>
+       <div class="program__subtitle">Стоимоть тура</div>
+       <div class="route__price">от 40 000 рублей</div>
+    </div>
+  </div>
+</section>
+<section class="photo">
+  <div class="container">
+    <div class="photo__inner">
+      <div class="title photo-title wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">Фото</div>   
+    </div>
+  </div>
+  <div class="photo-slider">
+    <div class="photo-box">
+      <img class="photo-box__img lazy" data-src="img/photo1.png" alt="" />
+    </div>
+    <div class="photo-box">
+      <img class="photo-box__img lazy" data-src="img/photo2.png" alt="" />
+    </div>
+    <div class="photo-box">
+      <img class="photo-box__img lazy" data-src="img/photo3.png" alt="" />
+    </div>
+    <div class="photo-box">
+      <img class="photo-box__img lazy" data-src="img/photo1.png" alt="" />
+    </div>
+    <div class="photo-box">
+      <img class="photo-box__img lazy" data-src="img/photo2.png" alt="" />
+    </div>
+    <div class="photo-box">
+      <img class="photo-box__img lazy" data-src="img/photo3.png" alt="" />
+    </div>
+  </div>
+</section>
+<section class="order book-tour" id="order">
+  <div class="container">
+    <div class="order__inner">
+      <div class="title order-title wow animate__animated animate__fadeInDown" data-wow-delay="0.4s">Забронировать</div>
+      <div class="order-subtitle wow animate__animated animate__fadeInDown" data-wow-delay="0.8s">Заполните форму и мы свяжемся с вами в течение дня</div>
+      <form class="order-form" name="order-form" method="post">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Имя Фамилия" />
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Телефон" />
+        </div>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Email" required />
+        </div>
+        <button type="submit" class="btn order-form__btn btn-orange wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">Забронировать</button>
+      </form>
+    </div>
+  </div>
+</section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="row">
+          <div class="col">
+            <div class="logo">
+              <a href="index.html" class="logo-link">
+                <img src="img/logo.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row footer__items">
+          <div class="col-12 col-sm-3">
+            <div class="footer__community">Сообщество «HikingTrip»</div>
+            <div class="footer__copy">&copy; 2021. Все права защищены</div>
+            <div class="policy"><a href="#">Политика конфиденциальности</a></div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="footer__address"><span>Адрес:</span><br />
+              г. Великий Гусляр, ул.Мира, 10,<br />
+              2 этаж
+            </div>
+          </div>
+          <div class="col-12 col-sm-3">
+            <div class="footer__order"><span>Заказ туров и бронирование:</span><br />
+              тел. +7 903-050-43-43<br />
+              e-mail: hikingtrip@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>

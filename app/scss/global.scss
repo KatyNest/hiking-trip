@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    scroll-behavior: smooth;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+   @extend %roboto-400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    color: $black;
+    background: #fff;
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+  
+  }
+  .container {
+    max-width: 1270px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+      @extend %robotoc-700;
+      font-size: 110px;
+      line-height: 129px;
+      color:$brown;
+     
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .btn,
+  .btn-check:focus+.btn, .btn:focus {
+    outline: non;
+    box-shadow: none;
+  }
+  .btn-orange {
+    background: $orange;
+    text-transform: uppercase;
+    color:#fff;
+    @extend %robotoc-700;
+    border-radius: 0;
+    &:hover {
+      color:$brown;
+    }
+  }
+  .slick-arrow {
+    width: 44px;
+    height: 44px;
+  }
+  .slick-dots li {margin: 0 5px;}
+   .slick-dots li button {
+    border-radius: 100%;
+    background-color: $orange;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25)
+  }
+   .slick-dots li.slick-active button {background-color: $beige;}
+  .slick-dots li button:before {
+    display: none;
+  }
+  .slick-dots {bottom: -40px;}
+  .slick-loading .slick-list{
+    background: #fff;
+}
+  .form-control {
+    outline: none !important;
+    background: #FFFFFF;
+    border: 1px solid #8D5127;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 15px 15px 17px;
+    font-size: 32px;
+    line-height: 37px;
+    color:$black;
+    @extend %robotoc-400;
+    &:focus {
+      border:1px solid #8D5127;
+      box-shadow: none;
+    }
+    &::placeholder {
+      @extend %robotoc-400;
+      font-size: 32px;
+      line-height: 37px;
+      color:#A19993;
+    }
+  }
+  .slick-prev:before, .slick-next:before {display: none;}
+@media (min-width: 1400px){
+.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1270px;
+  }
+}
+@media (max-width:1040px){
+.title {
+    font-size: 103px;
+    line-height: 122px;    
+  }
+}
+@media (max-width: 992px){
+.title {
+    font-size: 90px;
+    line-height: 99px;    
+  }
+}
+@media (max-width: 600px){
+.title {
+    font-size: 60px;
+    line-height: 69px;    
+  }
+}
+@media (max-width: 400px){
+.title {
+    font-size: 45px;
+    line-height: 65px;    
+  }
+}
+
+
